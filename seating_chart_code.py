@@ -18,6 +18,8 @@ except FileNotFoundError:
 
 count = 0
 students = []
+male_students = []
+female_students = []
 male = 0
 female = 0
 
@@ -32,10 +34,21 @@ for line in lines:
                 count += 1
                 if gender == 'm':
                     male += 1
+                    male_students.append((num))
                 if gender == 'f':
                     female += 1
+                    female_students.append((num))
         except ValueError:
             continue  # Skip invalid lines
+
+for i in range(groups):
+    #compare array sizes and if one is bigger, add one to smaller array until they are the same size
+    #shuffle male_students and female_students arrays
+    if male == female:
+        #pull first (and remove) each number from arrays (alternating) and add to group until group size is met
+    else:
+        #pull from bigger student array first
+
 
 print(f"Total numbers followed by 'm' or 'f': {count}")
 print(f"Students: {students}")  # Optional: to show stored data
