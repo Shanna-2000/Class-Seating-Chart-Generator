@@ -54,3 +54,5 @@ print(f"Total numbers followed by 'm' or 'f': {count}")
 print(f"Students: {students}")  # Optional: to show stored data
 print(f"Male students: {male}")
 print(f"Female students: {female}")
+
+#Added for testing ugh
